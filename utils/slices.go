@@ -1,6 +1,7 @@
 package utils
 
-func ChunkArray(chunkCount int, arr []string) [][]string {
+// ChunkSlice - Splits a slice of strings into portions
+func ChunkSlice(chunkCount int, arr []string) [][]string {
 	var divided [][]string
 
 	chunkSize := (len(arr) + chunkCount - 1) / chunkCount
@@ -18,6 +19,7 @@ func ChunkArray(chunkCount int, arr []string) [][]string {
 	return divided
 }
 
+// GetLongest - Returns the longest string found in a slice of strings
 func GetLongest(arr []string) string {
 	var longest string
 
